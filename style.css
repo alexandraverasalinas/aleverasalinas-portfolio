@@ -694,7 +694,7 @@ img {
 }
 
 .ateez-thumb {
-    background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+    background: linear-gradient(180deg, #1F3D50 57%, #214069 93%);
 }
 
 .design-card:hover .design-thumb {
@@ -830,6 +830,38 @@ img {
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
+
+.tag {
+    background: var(--primary-light);
+    color: var(--text);
+    padding: 6px 14px 6px 8px;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tag-icon-wrap {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tag-icon-wrap img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+
 
 .contact-grid {
     display: grid;
