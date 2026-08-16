@@ -111,3 +111,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+const container = document.getElementById('stars-container');
+const star = '⭐';
+let lastTime = 0;
+
+document.addEventListener('mousemove', (e) => {
+  const now = Date.now();
+ 
+  if (now - lastTime < 100) return;
+  lastTime = now;
+  
+  const starEl = document.createElement('div');
+  starEl.className = 'star';
+  starEl.textContent = star;
+  starEl.style.left = e.clientX + 'px';
+  starEl.style.top = e.clientY + 'px';
+  
+  container.appendChild(starEl);
+  
+  setTimeout(() => starEl.remove(), 1000);
+});
